@@ -15,6 +15,14 @@ body{
     margin: 0% auto;
 }
 
+.between{
+    padding: 140px;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+}
+
 /* global css end*/
 .navbar{
     max-width: 93%;
@@ -84,6 +92,7 @@ button{
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
     & img{
         width: 100% ;
         height: auto;
@@ -136,6 +145,63 @@ button{
     .bgtrack{
         position: absolute;
         z-index: -1;
-        left: 0%;
+        left: 2%;
+        top: 18%;
+    }
+
+    .leftsection{
+        & h2{
+            font-size: 85px;
+        }
+
+        .imagegrid{
+            padding-top: 80px;
+            padding-left: 80px;
+            display: flex;
+            gap: 20px;
+
+            & div{
+                width: 150px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            & div:nth-child(2){
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .rightsection{
+        & h3{
+            font-size: 40px;
+            color: #9393c4;
+            font-weight: 400;
+            margin-left: 150px;
+        }
+
+        .detailsdiv{
+            display: flex;
+            align-items: start;
+            gap: 30px;
+            margin-top: 60px;
+            margin-left: 100px;
+            & div{
+                padding-top: 20px;
+
+                & h2{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                & p{
+                    font-size: 20px;
+                    color: #9393c4;
+                    font-weight: 400;
+                    padding-top: 20px;
+                    max-width: 300px;
+                }
+            }
+        }
     }
 }
